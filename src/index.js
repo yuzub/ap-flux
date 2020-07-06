@@ -1,11 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { render } from 'react-dom';
-// import HomePage from './pages/HomePage';
-// import AboutPage from './pages/AboutPage';
 import App from './pages/App';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-render(<App />, document.getElementById('root'));
+render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('root')
+);
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
